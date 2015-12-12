@@ -1,0 +1,35 @@
+{
+  "name": "vivid",
+  "version": "0.0.1",
+  "homepage": "https://github.com/andyhqtran/VividUI",
+  "authors": [
+    "Andy Tran <hello@andytran.me>"
+  ],
+  "description": "Vivid - Soft Material UI Kit",
+  "main": [
+    "scss/vivid.scss",
+    "dist/css/vivid.css",
+    "dist/js/vivid.js"
+  ],
+  "keywords": [
+    "ui-kit",
+    "ui",
+    "css",
+    "sass",
+    "jade",
+    "responsive",
+    "framework",
+    "web"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
