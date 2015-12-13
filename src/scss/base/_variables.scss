@@ -1,0 +1,35 @@
+// Base Color
+$white: #FFFFFF;
+$black: #000000;
+$dark-gray: rgba($black, 0.8);
+$gray: rgba($black, 0.6);
+$light-gray: rgba($black, 0.4);
+
+// Colors
+$purple: #827EB1;
+$green: #57CA7E;
+$aqua: #B4D0FD;
+$blue: #1684FB;
+$orange: #FED330;
+$red: #FB4F59;
+
+// Theme Colors
+$accent: $blue;
+
+// Fonts
+$body-font: "Poppins";
+$body-font-alt: "Cambo";
+
+// Font Weight
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// Base Settings
+$base-font-color: $gray;
+$base-font-family: $body-font, sans-serif;
+$base-font-size: rem(14);
+$base-font-weight: $regular;
+$base-line-height: em(24); // TODO: Fix according to PSD later

@@ -1,0 +1,90 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+
+  // Poppins
+  &.poppins,
+  &[data-font='Poppins'] {
+    font-family: $body-font;
+  }
+
+  // Cambo Font
+  &.cambo,
+  &[data-font='Cambo'] {
+    font-family: $body-font-alt;
+  }
+}
+
+::selection {
+  background: rgba($accent, 0.6);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 rem(10);
+  color: $dark-gray;
+  font-weight: $bold;
+
+  .cambo & {
+    font-weight: $regular;
+  }
+}
+
+h1 {
+  font-size: rem(72);
+  line-height: rem(72);
+}
+
+h2 {
+  font-size: rem(60);
+  line-height: rem(60);
+}
+
+h3 {
+  font-size: rem(48);
+  line-height: rem(48);
+}
+
+h4 {
+  font-size: rem(36);
+  line-height: rem(36);
+}
+
+h5 {
+  font-size: rem(30);
+  line-height: rem(30);
+}
+
+h6 {
+  font-size: rem(24);
+  line-height: rem(24);
+}
+
+a {
+  color: $dark-gray;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $accent;
+  }
+}
+
+blockquote {
+  color: $dark-gray;
+  font-size: rem(18);
+  margin: 0 0 rem(10);
+
+  &:before,
+  &:after {
+    content: "'";
+    display: inline;
+    color: inherit;
+  }
+}
