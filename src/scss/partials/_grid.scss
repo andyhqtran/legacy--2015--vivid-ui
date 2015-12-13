@@ -1,0 +1,33 @@
+.container {
+  width: $grid-width;
+  max-width: $grid-max-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 ($grid-gutters / 2);
+  box-sizing: border-box;
+
+  &-fluid {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 100%;
+  margin: 0 (-$grid-gutters / 2);
+}
+
+.col {
+  padding: 0 $grid-gutters;
+  box-sizing: border-box;
+
+  @for $i from 1 through $grid-columns {
+    &-#{$i} {
+      width: percentage($i / $grid-columns);
+      flex-basis: percentage($i / $grid-columns);
+    }
+  }
+}

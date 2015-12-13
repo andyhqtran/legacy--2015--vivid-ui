@@ -33,3 +33,9 @@ $base-font-family: $body-font, sans-serif;
 $base-font-size: rem(14);
 $base-font-weight: $regular;
 $base-line-height: em(24); // TODO: Fix according to PSD later
+
+// Grid Settings
+$grid-width: 1170px;
+$grid-max-width: 1170px;
+$grid-columns: 4;
+$grid-gutters: 30px;
