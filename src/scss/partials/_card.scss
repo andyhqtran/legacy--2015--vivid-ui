@@ -2,5 +2,6 @@
   background: $card-background;
   border-radius: $card-border-radius;
   padding: $card-padding-vertical $card-padding-horizontal;
+  margin: 0 0 $card-gutters;
   box-shadow: 0 1px 4px rgba($black, 0.1);
 }
