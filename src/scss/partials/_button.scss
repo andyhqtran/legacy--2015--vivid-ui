@@ -1,10 +1,11 @@
 .btn {
   outline: none;
   display: inline-block;
-  background: #EBEEF0;
+  background: $btn-default-background;
   border: 0;
   border-radius: 100px;
   padding: $btn-padding-vertical $btn-padding-horizontal;
+  color: $btn-default-color;
   font-size: rem(12);
   line-height: rem(20);
   font-weight: $semibold;
@@ -14,9 +15,9 @@
   &:hover,
   &:active,
   &:focus {
-    background: #737980;
+    background: $btn-default-background-hover;
     box-shadow: 0 rem(10) rem(20) rgba(#737980, 0.4);
-    color: $white;
+    color: $btn-default-color-hover;
   }
 
   @each $name, $color in $colors {
@@ -29,6 +30,7 @@
       &:active,
       &:focus {
         background: darken($color, 10%);
+        color: $white;
       }
     }
   }
