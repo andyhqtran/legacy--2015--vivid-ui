@@ -36,6 +36,11 @@ h1, h2, h3, h4, h5, h6 {
   .cambo & {
     font-weight: $regular;
   }
+
+  // Alternative Font Weight
+  &.alt {
+    font-weight: $light;
+  }
 }
 
 h1 {
@@ -68,6 +73,11 @@ h6 {
   line-height: rem(24);
 }
 
+p {
+  margin: 0 0 rem(10);
+  font-size: rem(12);
+}
+
 a {
   color: $dark-gray;
   text-decoration: none;
@@ -79,9 +89,11 @@ a {
 }
 
 blockquote {
+  display: block;
+  margin: 0 0 rem(10);
   color: $dark-gray;
   font-size: rem(18);
-  margin: 0 0 rem(10);
+  line-height: rem(26);
 
   &:before,
   &:after {
@@ -89,4 +101,30 @@ blockquote {
     display: inline;
     color: inherit;
   }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    &:before {
+      content: '';
+      display: inline-block;
+      background: #B9C2CC;
+      width: 6px;
+      height: 6px;
+      border-radius: 10px;
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+    }
+  }
+
+  ul {
+    margin: 0 0 0 15px;
+  }
+}
+
+ol {
+  padding: 0 0 0 15px;
 }
