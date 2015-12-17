@@ -1,0 +1,40 @@
+.btn {
+  outline: none;
+  display: inline-block;
+  background: #EBEEF0;
+  border: 0;
+  border-radius: 100px;
+  padding: $btn-padding-vertical $btn-padding-horizontal;
+  font-size: rem(12);
+  line-height: rem(20);
+  font-weight: $semibold;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: #737980;
+    box-shadow: 0 rem(10) rem(20) rgba(#737980, 0.4);
+    color: $white;
+  }
+
+  @each $name, $color in $colors {
+    &-#{$name} {
+      background: $color;
+      box-shadow: 0 rem(10) rem(20) rgba($color, 0.4);
+      color: $white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: darken($color, 10%);
+      }
+    }
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: none;
+  }
+}
