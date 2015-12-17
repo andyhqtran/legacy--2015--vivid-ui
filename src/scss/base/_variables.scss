@@ -41,6 +41,9 @@ $grid-max-width: 1170px;
 $grid-columns: 4;
 $grid-gutters: rem(30);
 
+// Components Settings
+$component-border-radius: 4px;
+
 // Button Settings
 $btn-default-background: #EBEEF0;
 $btn-default-background-hover: #737980;
@@ -48,3 +51,7 @@ $btn-default-color: #737980;
 $btn-default-color-hover: $white;
 $btn-padding-vertical: rem(10);
 $btn-padding-horizontal: rem(20);
+
+// Card Settings
+$card-background: $white;
+$card-border-radius: $component-border-radius;
