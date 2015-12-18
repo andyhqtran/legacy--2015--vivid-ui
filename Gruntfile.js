@@ -122,6 +122,18 @@ module.exports = function (grunt) {
       }
     },
 
+    // CoffeeScript
+    coffee: {
+      dev: {
+        expand: true,
+        base: true,
+        cwd: 'src/coffee',
+        src: ['*.coffee'],
+        dest: 'src/js/',
+        ext: '.js'
+      }
+    },
+
     // Concat
     concat: {
       js: {
@@ -224,8 +236,8 @@ module.exports = function (grunt) {
       },
 
       js: {
-        files: ['**/*.js', '!Gruntfile.js'],
-        tasks: ['concat:js', 'uglify:dist', 'notify:js', 'wakeup:complete']
+        files: ['**/*.js', '**/*.coffee', '!Gruntfile.js'],
+        tasks: ['coffee:dev', 'concat:js', 'uglify:dist', 'notify:js', 'wakeup:complete']
       }
     }
   });
