@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #2E3033;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba($black, 0.1);
+  margin: 0 0 rem(30);
+  padding: rem(20) rem(30);
+  color: $gray;
+
+  .nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 rem(20);
+
+      &:before {
+        display: none;
+      }
+    }
+
+    a {
+      color: $gray;
+      font-size: rem(14);
+
+      &:hover {
+        color: $light-gray;
+      }
+    }
+  }
+}
