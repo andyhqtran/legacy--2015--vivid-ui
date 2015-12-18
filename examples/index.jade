@@ -68,6 +68,10 @@ html
         .row
           .col.col-4
             .card
+
+              // Title
+              .title Title
+
               // Paragraph
               p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Donec sed odio dui.
 
@@ -78,27 +82,17 @@ html
 
               // Unordered List
               ul
-                li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                  ul
-                    li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                    li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                    li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                li Maecenas sed diam eget risus varius blandit sit amet non magna.
+                li Cras mattis consectetur purus sit amet fermentum.
+                  ol
                     li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                 li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
               // Ordered List
               ol
-                li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                li Maecenas sed diam eget risus varius blandit sit amet non magna.
+                li Cras mattis consectetur purus sit amet fermentum.
                   ol
-                    li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                    li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                    li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                     li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
                 li Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
@@ -159,66 +153,67 @@ html
               // Divider
               hr
 
-              // Radio
-              .radio
-                label
-                  input(type='radio'
-                        name='radio')
-                  span.radio
-                  | Dapibus ac facilisis in
+              .row
+                .col.col-2
 
-              // Radio
-              .radio
-                label
-                  input(type='radio'
-                        name='radio')
-                  span.radio
-                  | Dapibus ac facilisis in
+                  // Radio
+                  .radio
+                    label
+                      input(type='radio'
+                            name='radio')
+                      span.radio
+                      | Dapibus ac facilisis in
 
-              // Radio
-              .radio.disabled
-                label
-                  input(type='radio'
-                        name='radio'
-                        disabled)
-                  span.radio
-                  | Dapibus ac facilisis in
+                  // Radio
+                  .radio.disabled
+                    label
+                      input(type='radio'
+                            name='radio'
+                            disabled)
+                      span.radio
+                      | Porta Malesuada
 
-              // Checkbox
-              .checkbox
-                label
-                  input(type='checkbox'
-                        name='checkbox')
-                  span.checkbox
-                  | Dapibus ac facilisis in
+                .col.col-2
 
-              // Checkbox
-              .checkbox.disabled
-                label
-                  input(type='checkbox'
-                        name='checkbox'
-                        disabled)
-                  span.checkbox
-                  | Dapibus ac facilisis in
+                  // Checkbox
+                  .checkbox
+                    label
+                      input(type='checkbox'
+                            name='checkbox')
+                      span.checkbox
+                      | Porta Malesuada
+
+                  // Checkbox
+                  .checkbox.disabled
+                    label
+                      input(type='checkbox'
+                            name='checkbox'
+                            disabled)
+                      span.checkbox
+                      | Dapibus ac facilisis in
 
               // Divider
               hr
 
-              // Toggle
-              .toggle
-                label
-                  input(type='checkbox')
-                  .toggle(data-toggle-on='-'
-                          data-toggle-off='O')
-                    .select
+              .row
+                .col.col-2
 
-              // Toggle
-              .toggle
-                label
-                  input(type='checkbox')
-                  .toggle(data-toggle-on='-'
-                          data-toggle-off='+')
-                      .select
+                  // Toggle
+                  .toggle
+                    label
+                      input(type='checkbox')
+                      .toggle(data-toggle-on='-'
+                              data-toggle-off='O')
+                        .select
+
+                .col.col-2
+                  // Toggle
+                  .toggle
+                    label
+                      input(type='checkbox')
+                      .toggle(data-toggle-on='-'
+                              data-toggle-off='+')
+                          .select
 
     // Scripts
     // bower:js
