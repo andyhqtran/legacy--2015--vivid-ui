@@ -68,17 +68,19 @@ module.exports = function (grunt) {
       dist: {
         options: {
           sourcemap: false,
-          trace: false
         },
-        files: {
-          'dist/css/<%= pkg.name %>.css': 'src/scss/<%= pkg.name %>.{scss,sass}'
-        }
+        files: [{
+          expand: true,
+          cwd: 'src/scss',
+          src: ['*.scss', '!_*.scss', '!examples'],
+          dest: '../../dist/css',
+          ext: '.css'
+        }]
       },
 
       dev: {
         options: {
           sourcemap: 'auto',
-          trace: true
         },
         files: {
           'dist/css/<%= pkg.name %>.css': 'src/scss/<%= pkg.name %>.{scss,sass}',
