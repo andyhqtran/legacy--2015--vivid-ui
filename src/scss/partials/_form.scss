@@ -1,3 +1,52 @@
+.form {
+  &-group {
+    margin: 0 0 rem(30);
+
+    label {
+      display: block;
+      margin: 0 0 rem(4) rem(12);
+      color: #B8C2CC;
+      font-size: rem(14);
+      font-weight: $semibold;
+    }
+
+    input {
+      outline: none;
+      background: $white;
+      width: 100%;
+      border: 0;
+      border-radius: 100px;
+      box-shadow: inset 0 0 0 2px #EBEEF0;
+      box-sizing: border-box;
+      padding: rem(10) rem(20);
+      color: $gray;
+      font-size: rem(12);
+      font-weight: $medium;
+      line-height: rem(20);
+    }
+  }
+}
+
+.input-group {
+  position: relative;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px #EBEEF0;
+  padding: 4px;
+
+  input {
+    box-shadow: none;
+    padding-top: rem(6);
+    padding-bottom: rem(6);
+  }
+
+  .btn {
+    position: absolute;
+    right: 4px;
+    padding-top: rem(6);
+    padding-bottom: rem(6);
+  }
+}
+
 .checkbox,
 .radio {
   margin: 0 0 rem(10);

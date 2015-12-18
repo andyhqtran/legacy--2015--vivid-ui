@@ -5,6 +5,7 @@
   border: 0;
   border-radius: 100px;
   padding: $btn-padding-vertical $btn-padding-horizontal;
+  box-sizing: border-box;
   color: $btn-default-color;
   font-size: rem(12);
   line-height: rem(20);
