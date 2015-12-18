@@ -50,6 +50,7 @@
 .checkbox,
 .radio,
 .toggle {
+  display: inline-block;
   margin: 0 0 rem(10);
   color: $checkbox-radio-font-color;
   font-size: $checkbox-radio-font-size;
