@@ -125,6 +125,11 @@ html
               a.btn.btn-block.btn-orange(href='#') Button
               a.btn.btn-block.btn-orange(href='#'
                                disabled) Button
+            .card
+
+              // Default Button w/ Tooltip
+              a.btn.btn-block(href='#'
+                              data-tooltip='Tooltip') Button
 
           .col.col-2
             .card
@@ -214,3 +219,9 @@ html
                   .toggle(data-toggle-on='-'
                           data-toggle-off='+')
                       .select
+
+    // Scripts
+    // bower:js
+    script(src='../bower_components/jquery/dist/jquery.js')
+    // endbower
+    script(src='../dist/js/vivid.js')
