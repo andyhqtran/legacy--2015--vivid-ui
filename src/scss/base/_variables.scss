@@ -59,3 +59,11 @@ $card-border-radius: $component-border-radius;
 $card-gutters: $grid-gutters;
 $card-padding-vertical: rem(15);
 $card-padding-horizontal: rem(15);
+
+// Checkbox & Radio Settings
+$checkbox-radio-background-color: $white;
+$checkbox-radio-border-color: #EBEEF0;
+$checkbox-radio-border-color-active: $accent;
+$checkbox-radio-check-color: $white;
+$checkbox-radio-font-color: $gray;
+$checkbox-radio-font-size: rem(14);
