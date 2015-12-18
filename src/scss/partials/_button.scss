@@ -20,6 +20,17 @@
     color: $btn-default-color-hover;
   }
 
+  &:focus,
+  &:active {
+    box-shadow: none;
+  }
+
+  &.disabled,
+  &[disabled] {
+    opacity: 0.5;
+    box-shadow: none;
+  }
+
   @each $name, $color in $colors {
     &-#{$name} {
       background: $color;
@@ -33,10 +44,5 @@
         color: $white;
       }
     }
-  }
-
-  &:focus,
-  &:active {
-    box-shadow: none;
   }
 }
