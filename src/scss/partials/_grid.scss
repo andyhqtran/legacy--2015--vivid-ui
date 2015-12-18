@@ -21,7 +21,7 @@
 }
 
 .col {
-  padding: 0 $grid-gutters;
+  padding: 0 ($grid-gutters / 2);
   box-sizing: border-box;
 
   @for $i from 1 through $grid-columns {
