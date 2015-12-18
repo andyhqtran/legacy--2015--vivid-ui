@@ -1,0 +1,23 @@
+.alert {
+  background: $alert-default-background;
+  border-radius: 4px;
+  box-shadow: 0 rem(1) rem(4) rgba($black, 0.1);
+  box-sizing: border-box;
+  margin: 0 0 rem(30);
+  padding: $alert-padding-vertical $alert-padding-horizontal;
+  color: $alert-default-color;
+  font-size: rem(14);
+
+  @each $name, $color in $colors {
+    &-#{$name} {
+      background: $color;
+      color: $white;
+    }
+  }
+
+  img {
+    display: inline-block;
+    margin: 0 rem(30) 0 0;
+    vertical-align: middle;
+  }
+}
