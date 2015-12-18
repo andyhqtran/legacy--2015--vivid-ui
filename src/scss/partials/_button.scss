@@ -20,11 +20,6 @@
     color: $btn-default-color-hover;
   }
 
-  &:focus,
-  &:active {
-    box-shadow: none;
-  }
-
   &.disabled,
   &[disabled] {
     box-shadow: none;
@@ -43,8 +38,14 @@
       &:active,
       &:focus {
         background: darken($color, 10%);
+        box-shadow: 0 rem(10) rem(20) rgba($color, 0.4);
         color: $white;
       }
     }
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: none;
   }
 }
