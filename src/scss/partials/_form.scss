@@ -48,7 +48,8 @@
 }
 
 .checkbox,
-.radio {
+.radio,
+.toggle {
   margin: 0 0 rem(10);
   color: $checkbox-radio-font-color;
   font-size: $checkbox-radio-font-size;
@@ -127,5 +128,68 @@
     box-shadow: inset 0 0 0 2px $checkbox-radio-border-color;
     vertical-align: -6px;
     transition: 0.3s ease;
+  }
+}
+
+.toggle {
+  input[type='checkbox'],
+  input[type='radio'] {
+    display: none;
+
+    &:checked + .toggle {
+      &:before {
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+
+      .select {
+        left: 0;
+      }
+    }
+  }
+
+  .toggle {
+    position: relative;
+    background: $accent;
+    width: 76px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    padding: 2px;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $white;
+      transition: 0.3s ease;
+    }
+
+    &:before {
+      content: attr(data-toggle-on);
+      left: 15px;
+      opacity: 1;
+    }
+
+    &:after {
+      content: attr(data-toggle-off);
+      right: 15px;
+      opacity: 0;
+    }
+
+    .select {
+      position: relative;
+      left: calc(100% - 36px);
+      display: block;
+      background: $white;
+      box-shadow: 0 10px 20px rgba($gray, 0.5);
+      width: 36px;
+      height: 36px;
+      border-radius: 100px;
+      transition: 0.3s ease;
+    }
   }
 }

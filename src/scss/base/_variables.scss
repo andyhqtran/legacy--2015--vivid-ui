@@ -1,9 +1,9 @@
 // Base Color
 $white: #FFFFFF;
 $black: #000000;
-$dark-gray: rgba($black, 0.8);
-$gray: rgba($black, 0.6);
-$light-gray: rgba($black, 0.4);
+$dark-gray: lighten($black, 20%);
+$gray: lighten($black, 40%);
+$light-gray: lighten($black, 60%);
 
 // Colors
 $purple: #827EB1;
