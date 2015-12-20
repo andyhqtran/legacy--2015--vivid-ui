@@ -65,7 +65,7 @@ module.exports = (grunt) ->
         options:
           sourcemap: 'auto'
         expand: true
-        cwd: ['examples']
+        cwd: 'examples'
         src: ['*.scss', '!_*.scss']
         dest: '.'
         ext: '.css'
