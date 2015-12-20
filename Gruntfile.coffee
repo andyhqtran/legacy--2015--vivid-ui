@@ -58,14 +58,14 @@ module.exports = (grunt) ->
         expand: true
         cwd: 'src/scss'
         src: ['*.scss', '!_*.scss', '!examples']
-        dest: '../../dist/css'
+        dest: 'dist/css'
         ext: '.css'
 
       dev:
         options:
           sourcemap: 'auto'
         expand: true
-        cwd: 'examples'
+        cwd: ['examples']
         src: ['*.scss', '!_*.scss']
         dest: '.'
         ext: '.css'
@@ -198,7 +198,7 @@ module.exports = (grunt) ->
 
       sass:
         files: '**/*.{scss,sass}'
-        tasks: ['sass:dev', 'notify:sass', 'wakeup:complete']
+        tasks: ['sass', 'notify:sass', 'wakeup:complete']
 
       coffee:
         files: ['**/*.js', '**/*.coffee', '!Gruntfile.js']
@@ -213,5 +213,5 @@ module.exports = (grunt) ->
         tasks: ['copy:font', 'notify:font', 'wakeup:complete']
 
   grunt.registerTask 'test', ['jshint:all']
-  grunt.registerTask 'dev', ['jade:dev', 'htmlmin:dev', 'sass:dev', 'concat:js', 'uglify:dist']
+  grunt.registerTask 'dev', ['jade:dev', 'htmlmin:dev', 'sass', 'concat:js', 'copy', 'uglify:dist']
   grunt.registerTask 'default', ['connect:server', 'dev', 'notify:server', 'watch']
