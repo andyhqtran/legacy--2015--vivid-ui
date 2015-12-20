@@ -15,7 +15,7 @@ module.exports = (grunt) ->
           base: '.'
 
     clean:
-      temp: ['.tmp', 'bower_components', '.sass-cache', '*.html', '*.css', '*.map', 'node_modules']
+      temp: ['.tmp', 'bower_components', '.sass-cache', '*.html', '*.css', '*.map', 'dist', 'node_modules']
 
     jade:
       dev:
@@ -24,7 +24,7 @@ module.exports = (grunt) ->
             debug: true
             pretty: true
         expand: true
-        cwd: 'examples'
+        cwd: '.examples'
         src: ['*.jade']
         dest: '.'
         ext: '.html'
@@ -42,7 +42,7 @@ module.exports = (grunt) ->
           removeComments: true
           collapseWhitespace: true
         expand: true
-        cwd: 'examples'
+        cwd: '.examples'
         src: ['*.html']
         dest: '.'
         ext: '.html'
@@ -57,7 +57,7 @@ module.exports = (grunt) ->
           sourcemap: false
         expand: true
         cwd: 'src/scss'
-        src: ['*.scss', '!_*.scss', '!examples']
+        src: ['*.scss', '!_*.scss', '!.examples']
         dest: '../../dist/css'
         ext: '.css'
 
@@ -65,7 +65,7 @@ module.exports = (grunt) ->
         options:
           sourcemap: 'auto'
         expand: true
-        cwd: 'examples'
+        cwd: '.examples'
         src: ['*.scss', '!_*.scss']
         dest: '.'
         ext: '.css'
@@ -175,7 +175,7 @@ module.exports = (grunt) ->
     wakeup:
       complete:
         options:
-          custom: 'grunt/pop.mp3'
+          custom: '.grunt/pop.mp3'
           volume: 1
 
     watch:
