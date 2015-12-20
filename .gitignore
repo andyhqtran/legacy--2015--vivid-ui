@@ -26,6 +26,9 @@ nbproject
 # Sass Cache
 .sass-cache
 
+# Temp. Folder
+.tmp
+
 # Files
 *.css
 *.map
