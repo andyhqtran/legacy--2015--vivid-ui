@@ -64,11 +64,9 @@ module.exports = (grunt) ->
       dev:
         options:
           sourcemap: 'auto'
-        expand: true
-        cwd: 'examples'
-        src: ['*.scss', '!_*.scss']
-        dest: '.'
-        ext: '.css'
+        files:
+          'dist/css/<%= pkg.name %>.css': 'src/scss/<%= pkg.name %>.{scss,sass}',
+          'examples/style.css': 'examples/style.{scss,sass}'
 
     cssmin:
       dist:
@@ -201,7 +199,7 @@ module.exports = (grunt) ->
         tasks: ['sass', 'notify:sass', 'wakeup:complete']
 
       coffee:
-        files: ['**/*.js', '**/*.coffee', '!Gruntfile.js']
+        files: ['**/*.js', '**/*.coffee', '!Gruntfile.coffee', '!Gruntfile.js']
         tasks: ['coffee:dev', 'concat:js', 'uglify:dist', 'notify:coffee', 'wakeup:complete']
 
       img:
