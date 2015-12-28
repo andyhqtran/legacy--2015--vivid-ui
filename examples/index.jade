@@ -236,6 +236,38 @@ html
                       .toggle(data-toggle-on='-'
                               data-toggle-off='+')
                           .select
+          .col.col-2
+            .card
+
+              // Form
+              form.form
+
+                // Title
+                h4.form-title Sign In
+
+                // Input
+                .form-group
+                  label(for='input')
+                  input#input(type='text'
+                              placeholder='Email Address')
+
+                // Input
+                .form-group
+                  label(for='input')
+                  input#input(type='password'
+                              placeholder='Password')
+
+                // Checkbox
+                .form-group
+                  .checkbox
+                    label
+                      input(type='checkbox'
+                            name='checkbox')
+                      span.checkbox
+                      | Remember Me
+
+                // Green Button
+                a.btn.btn-block.btn-green(href='#') Sign In
 
     // Scripts
     // bower:js
