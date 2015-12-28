@@ -26,7 +26,7 @@ module.exports = (grunt) ->
         expand: true
         cwd: 'examples'
         src: ['*.jade']
-        dest: '.'
+        dest: 'examples'
         ext: '.html'
 
     wiredep:
