@@ -174,7 +174,6 @@ module.exports = (grunt) ->
       complete:
         options:
           custom: '.grunt/pop.mp3'
-          volume: 1
 
     watch:
       options:
@@ -185,7 +184,7 @@ module.exports = (grunt) ->
         event: ['all']
 
       configFiles:
-        files: ['Gruntfile.js']
+        files: ['Gruntfile.coffee']
         tasks: ['notify:grunt', 'wakeup:complete']
         options:
           reload: true
@@ -212,4 +211,4 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'test', ['jshint:all']
   grunt.registerTask 'dev', ['jade:dev', 'htmlmin:dev', 'sass', 'concat:js', 'copy', 'uglify:dist']
-  grunt.registerTask 'default', ['connect:server', 'dev', 'notify:server', 'watch']
+  grunt.registerTask 'default', ['connect:server', 'dev', 'notify:server', 'wakeup:complete', 'watch']
